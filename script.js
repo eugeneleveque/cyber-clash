@@ -40,32 +40,13 @@ function assignRoles() {
     return;
   }
 
-  // Calculer le nombre de Hackers en fonction du nombre de joueurs
-  let numHackers;
-  switch (players.length) {
-    case 4:
-      numHackers = 1;
-      break;
-    case 5:
-    case 6:
-      numHackers = 2;
-      break;
-    case 7:
-    case 8:
-    case 9:
-      numHackers = 3;
-      break;
-    case 10:
-    case 11:
-    case 12:
-      numHackers = 4;
-      break;
-    default:
-      alert("Invalid number of players.");
-      return;
+  if (players.length % 2 !== 0) {
+    alert("The number of players must be even.");
+    return;
   }
 
-  const numDefenders = players.length - numHackers;
+  const numHackers = players.length / 2;
+  const numDefenders = players.length / 2;
 
   // Créer les rôles
   const roles = [];

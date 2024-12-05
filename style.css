@@ -26,3 +26,14 @@ color: red;
 background-color: #cce5ff;
 color: blue;
 }
+
+table {
+    width: 50%;
+    border-collapse: collapse; /* Fusionne les bordures pour éviter les doubles lignes */
+    margin: 20px auto;
+}
+th, td {
+    border: 2px solid black; /* Bordures autour des cellules */
+    padding: 8px;
+    text-align: center;
+}

@@ -42,19 +42,23 @@
     <div class="container">
         <h1>Assign Roles</h1>
         
-        <div>
-            <input type="text" id="playerNameInput" placeholder="Enter player name">
-            <button onclick="addPlayer()">Add Player</button>
+        <div class="container">
+            <h1>Assign Roles</h1>
+            
+            <div>
+                <input type="text" id="playerNameInput" placeholder="Enter player name">
+                <button onclick="addPlayer()">Add Player</button>
+            </div>
+            
+            <h3>Player List:</h3>
+            <div id="playerList"></div>
+    
+            <button id="assignRolesButton" onclick="assignRoles()">Assign Roles</button>
+            <button onclick="resetGame()">Reset Game</button>
+            
+            <h3>Assigned Roles:</h3>
+            <div id="assignedRolesList"></div>
         </div>
-        
-        <h3>Player List:</h3>
-        <div id="playerList"></div>
-
-        <button id="assignRolesButton" onclick="assignRoles()">Assign Roles</button>
-        <button onclick="resetGame()">Reset Game</button>
-        
-        <h3>Assigned Roles:</h3>
-        <div id="assignedRolesList"></div>
     </div>
 
     <script src="script.js"></script>
