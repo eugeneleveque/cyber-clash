@@ -37,3 +37,31 @@ th, td {
     padding: 8px;
     text-align: center;
 }
+
+.separation-border {
+    border-bottom: 2px solid #ccc; /* Ligne grise */
+    margin: 10px 0 10px 0; /* Espacement autour de la bordure */
+}
+
+#assignedRolesList {
+    border-radius: 10px; /* Coins arrondis */
+    padding: 15px; /* Espacement interne */
+    background-color: #f9f9f9; /* Fond gris clair */
+    color: #333; /* Couleur du texte */
+    font-size: 1.2em; /* Taille du texte légèrement augmentée */
+    margin-top: 10px; /* Espacement supérieur */
+    max-height: 300px; /* Hauteur maximale */
+    overflow-y: auto; /* Barre de défilement si nécessaire */
+}
+
+/* Optionnel : styliser chaque rôle */
+#assignedRolesList div {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd; /* Ligne entre les éléments */
+}
+
+/* Supprimer la bordure pour le dernier élément */
+#assignedRolesList div:last-child {
+    border-bottom: none;
+}
+
