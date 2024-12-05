@@ -1,3 +1,12 @@
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarMenu = document.querySelector("#navbarNav");
+
+// Ajouter un écouteur d'événement pour le clic
+navbarToggler.addEventListener("click", () => {
+  // Basculer la classe "show" sur le menu
+  navbarMenu.classList.toggle("show");
+});
+
 // Liste des joueurs
 let players = [];
 
