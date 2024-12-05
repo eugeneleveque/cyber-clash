@@ -1,0 +1,28 @@
+.assurance {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.assurance:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Augmente l'ombre au survol */
+}
+
+.player-list {
+margin: 20px auto;
+max-width: 400px;
+text-align: left;
+}
+.player {
+padding: 10px;
+margin: 5px 0;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+.hacker {
+background-color: #ffcccc;
+color: red;
+}
+.defender {
+background-color: #cce5ff;
+color: blue;
+}
